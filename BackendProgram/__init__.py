@@ -28,13 +28,13 @@ class get_data:
     def get_data(self):
         tree = self.id_tree
 
-        def url(self, sensor_type):
+        def url_api(sensor_type):
             address = f"https://belajar-python-unsyiah.an.r.appspot.com/sensor/read?npm=1904105010051&id_tree={tree}&sensor_type={sensor_type}";
-            return url;
+            return address;
         
         def air_temp(self):
             # koneksi ke api
-            address = url(0);
+            address = url_api(0);
             
             # buka data api
             url = urlopen(address);
@@ -45,7 +45,7 @@ class get_data:
         
         def air_hum(self):
             # koneksi ke api
-            address = url(1)
+            address = url_api(1)
             
             # buka data api
             url = urlopen(address);
@@ -56,7 +56,7 @@ class get_data:
         
         def rainfall(self):
             # koneksi ke api
-            address = url(2)
+            address = url_api(2)
             
             # buka data api
             url = urlopen(address);
@@ -67,7 +67,7 @@ class get_data:
         
         def uv_level(self):
             # koneksi ke api
-            address = url(3)
+            address = url_api(3)
             
             # buka data api
             url = urlopen(address);
@@ -78,7 +78,7 @@ class get_data:
         
         def soil_temp(self):
             # koneksi ke api
-            address = url(4)
+            address = url_api(4)
             
             # buka data api
             url = urlopen(address);
@@ -89,7 +89,7 @@ class get_data:
         
         def soil_hum(self):
             # koneksi ke api
-            address = url(5)
+            address = url_api(5)
             
             # buka data api
             url = urlopen(address);
@@ -100,7 +100,7 @@ class get_data:
         
         def soil_ph(self):
             # koneksi ke api
-            address = url(6)
+            address = url_api(6)
             
             # buka data api
             url = urlopen(address);
@@ -111,7 +111,7 @@ class get_data:
 
         def n_level(self):
             # koneksi ke api
-            address = url(7)
+            address = url_api(7)
             
             # buka data api
             url = urlopen(address);
@@ -122,7 +122,7 @@ class get_data:
         
         def p_level(self):
             # koneksi ke api
-            address = url(8)
+            address = url_api(8)
             
             # buka data api
             url = urlopen(address);
@@ -133,7 +133,7 @@ class get_data:
         
         def k_level(self):
             # koneksi ke api
-            address = url(9)
+            address = url_api(9)
             
             # buka data api
             url = urlopen(address);
