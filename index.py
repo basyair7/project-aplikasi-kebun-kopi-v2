@@ -48,7 +48,7 @@ def ambil_data():
         info_box.insert(END, " ");
 
         def program_get_data():
-            while True:
+            for i in range(10):
                 # cek exit_get_data
                 # jika client minta perubahan id & keluar dari app, maka program_get_data harus berhenti
                 if(id_tree == 0):
@@ -534,7 +534,7 @@ def simpan_data():
         query = sql.read_data(f"id_tree{data_sensor[0]}")
         list_data = ""
         for row in query:
-            list_data += f"Date Time\t\t : {row[0]} ({row[1]})\nSuhu Udara\t\t : {row[2]}\nKelembaban Udara : {row[3]}\nCurah Hujan\t\t : {row[4]}\nUV Level\t\t : {row[5]}\nSuhu tanah\t\t : {row[6]}\nKelembaban Tanah : {row[7]}\npH Tanah\t\t : {row[8]}\nN Level\t\t\t : {row[9]}\nP Level\t\t\t : {row[10]}\nK Level\t\t\t : {row[11]}\n\n"
+            list_data += f"Date Time\t\t : {row[0]} ({row[1]})\nSuhu Udara\t\t : {row[2]}\nKelembaban Udara : {row[3]}\nCurah Hujan\t\t : {row[4]}\nUV Level\t\t : {row[5]}\nSuhu tanah\t\t : {row[6]}\nKelembaban Tanah\t: {row[7]}\npH Tanah\t\t : {row[8]}\nN Level\t\t : {row[9]}\nP Level\t\t : {row[10]}\nK Level\t\t : {row[11]}\n\n";
 
         return list_data;
     
