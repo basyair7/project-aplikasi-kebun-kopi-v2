@@ -2,12 +2,13 @@
 2. buka cmd
 3. install library
     contoh python -m pip install <nama library>
-
-    a. urlopen
-    b. uniform
-    c. threading
-    d. matplotlib
-    e. numpy
+    
+    a. virtualenv
+    b. urlopen
+    c. uniform
+    d. threading
+    e. matplotlib
+    f. numpy
 
 4. jalanin program di cmd 
     contoh python index.py
