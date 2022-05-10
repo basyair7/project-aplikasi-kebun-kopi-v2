@@ -8,8 +8,7 @@ FILE INI ADALAH LIBRARY TEMPAT MENYIMPAN DATA KE DALAM DATABASE LOKAL
 WARNING : DILARANG KERAS MENGUBAH PROGRAM INI / PLAGIARISME
 """
 
-from sqlite3 import connect;
-from sqlite3 import IntegrityError, OperationalError;
+from sqlite3 import connect, IntegrityError, OperationalError;
 from tkinter import messagebox;
 import os
 
