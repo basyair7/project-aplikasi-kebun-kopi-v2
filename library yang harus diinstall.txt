@@ -5,10 +5,14 @@
     
     a. virtualenv
     b. urlopen
-    c. uniform
+    c. random
     d. threading
     e. matplotlib
     f. numpy
-
-4. jalanin program di cmd 
+4. buat dan buka virtualenv
+    1. virtualenv env
+    2. cd env/scripts/ or cd env/bin/
+    3. activate or ./activate
+    
+5. jalanin program di cmd 
     contoh python index.py
