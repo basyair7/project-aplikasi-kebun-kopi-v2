@@ -6,7 +6,6 @@ PRODI   = "TEKNIK ELEKTRO"
 """
 FILE INI ADALAH TEMPAT PROGRAM UTAMA APLIKASI DATA KEBUN KOPI
 
-WARNING : DILARANG KERAS MENGUBAH ISI FILE INI/ PLAGIARISME
 """
 
 from DatabaseSQLite import *
@@ -614,7 +613,7 @@ def delete():
                 exit_get_data.set()
                 sleep(2)
                 exit_get_data.clear()
-                sql.remove_table(del_id=f"id_tree{id_tree}", del_table=nama_table)
+                sql.remove_table(del_id=id_tree, del_table=nama_table)
                 messagebox.showinfo(f"Hapus Data ID {id_tree}", f"Data id tree {id_tree} telah dihapus")
                 info_box.insert(END, "Hapus Data ID");
                 info_box.insert(END, f"Data id tree {id_tree} telah dihapus");
