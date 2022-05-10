@@ -27,10 +27,14 @@ class get_data:
             
     def get_data(self):
         tree = self.id_tree
+
+        def url(self, sensor_type):
+            address = f"https://belajar-python-unsyiah.an.r.appspot.com/sensor/read?npm=1904105010051&id_tree={tree}&sensor_type={sensor_type}";
+            return url;
         
         def air_temp(self):
             # koneksi ke api
-            address = f"https://belajar-python-unsyiah.an.r.appspot.com/sensor/read?npm=1904105010051&id_tree={tree}&sensor_type=0";
+            address = url(0);
             
             # buka data api
             url = urlopen(address);
@@ -41,7 +45,7 @@ class get_data:
         
         def air_hum(self):
             # koneksi ke api
-            address = f"https://belajar-python-unsyiah.an.r.appspot.com/sensor/read?npm=1904105010051&id_tree={tree}&sensor_type=1";
+            address = url(1)
             
             # buka data api
             url = urlopen(address);
@@ -52,7 +56,7 @@ class get_data:
         
         def rainfall(self):
             # koneksi ke api
-            address = f"https://belajar-python-unsyiah.an.r.appspot.com/sensor/read?npm=1904105010051&id_tree={tree}&sensor_type=2";
+            address = url(2)
             
             # buka data api
             url = urlopen(address);
@@ -63,7 +67,7 @@ class get_data:
         
         def uv_level(self):
             # koneksi ke api
-            address = f"https://belajar-python-unsyiah.an.r.appspot.com/sensor/read?npm=1904105010051&id_tree={tree}&sensor_type=3";
+            address = url(3)
             
             # buka data api
             url = urlopen(address);
@@ -74,7 +78,7 @@ class get_data:
         
         def soil_temp(self):
             # koneksi ke api
-            address = f"https://belajar-python-unsyiah.an.r.appspot.com/sensor/read?npm=1904105010051&id_tree={tree}&sensor_type=4";
+            address = url(4)
             
             # buka data api
             url = urlopen(address);
@@ -85,7 +89,7 @@ class get_data:
         
         def soil_hum(self):
             # koneksi ke api
-            address = f"https://belajar-python-unsyiah.an.r.appspot.com/sensor/read?npm=1904105010051&id_tree={tree}&sensor_type=5";
+            address = url(5)
             
             # buka data api
             url = urlopen(address);
@@ -96,7 +100,7 @@ class get_data:
         
         def soil_ph(self):
             # koneksi ke api
-            address = f"https://belajar-python-unsyiah.an.r.appspot.com/sensor/read?npm=1904105010051&id_tree={tree}&sensor_type=6";
+            address = url(6)
             
             # buka data api
             url = urlopen(address);
@@ -107,7 +111,7 @@ class get_data:
 
         def n_level(self):
             # koneksi ke api
-            address = f"https://belajar-python-unsyiah.an.r.appspot.com/sensor/read?npm=1904105010051&id_tree={tree}&sensor_type=7";
+            address = url(7)
             
             # buka data api
             url = urlopen(address);
@@ -118,7 +122,7 @@ class get_data:
         
         def p_level(self):
             # koneksi ke api
-            address = f"https://belajar-python-unsyiah.an.r.appspot.com/sensor/read?npm=1904105010051&id_tree={tree}&sensor_type=8";
+            address = url(8)
             
             # buka data api
             url = urlopen(address);
@@ -129,7 +133,7 @@ class get_data:
         
         def k_level(self):
             # koneksi ke api
-            address = f"https://belajar-python-unsyiah.an.r.appspot.com/sensor/read?npm=1904105010051&id_tree={tree}&sensor_type=9";
+            address = url(9)
             
             # buka data api
             url = urlopen(address);
