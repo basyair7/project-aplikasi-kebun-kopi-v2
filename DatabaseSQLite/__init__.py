@@ -6,7 +6,6 @@ PRODI   : TEKNIK ELEKTRO
 
 FILE INI ADALAH LIBRARY TEMPAT MENYIMPAN DATA KE DALAM DATABASE LOKAL
 
-WARNING : DILARANG KERAS MENGUBAH PROGRAM INI / PLAGIARISME
 """
 
 from sqlite3 import connect;
@@ -206,12 +205,12 @@ class db_connect:
         c = conn.cursor();
 
         # hapus semua data table id_tree
-        c.execute(f"DROP TABLE IF EXISTS {del_id};")
+        c.execute(f"DROP TABLE IF EXISTS id_tree{del_id};")
         # commit
         conn.commit();
         
         # hapus semua data lokasi id_tree
-        c.execute(f"DELETE FROM {del_table} WHERE oid = {del_id};")
+        c.execute(f"DELETE FROM {del_table} WHERE id_tree={del_id};")
         # commit
         conn.commit();
 
