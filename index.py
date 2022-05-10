@@ -48,7 +48,7 @@ def ambil_data():
         info_box.insert(END, " ");
 
         def program_get_data():
-            for i in range(10):
+            while True:
                 # cek exit_get_data
                 # jika client minta perubahan id & keluar dari app, maka program_get_data harus berhenti
                 if(id_tree == 0):
@@ -58,7 +58,6 @@ def ambil_data():
                     return messagebox.showerror("Informasi", "ID Pohon 0 Tidak Tersedia!");
 
                 if exit_get_data.is_set():
-                    exit_get_data.clear()
                     break;
                 
                 # koneksi aplikasi ke api address
@@ -614,6 +613,7 @@ def delete():
             if ask == 'yes':
                 exit_get_data.set()
                 sleep(2)
+                exit_get_data.clear()
                 sql.remove_table(del_id=f"id_tree{id_tree}", del_table=nama_table)
                 messagebox.showinfo(f"Hapus Data ID {id_tree}", f"Data id tree {id_tree} telah dihapus")
                 info_box.insert(END, "Hapus Data ID");
@@ -640,6 +640,7 @@ def delete():
             try:
                 exit_get_data.set()
                 sleep(2)
+                exit_get_data.clear()
                 sql.remove_db()
                 messagebox.showinfo("Hapus Semua Data", "Semua data sensor telah dihapus")
                 info_box.insert(END, "Hapus Semua Data");
