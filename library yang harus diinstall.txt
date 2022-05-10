@@ -5,10 +5,9 @@
     
     a. virtualenv
     b. urlopen
-    c. random
-    d. threading
-    e. matplotlib
-    f. numpy
+    c. matplotlib
+    d. numpy
+    
 4. buat dan buka virtualenv
     1. virtualenv env
     2. cd env/scripts/ or cd env/bin/
