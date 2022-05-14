@@ -12,7 +12,6 @@ WARNING : DILARANG KERAS MENGUBAH API ADDRESS / PLAGIARISME
 
 from urllib.request import urlopen
 from tkinter import messagebox
-from threading import Lock, Event, Thread
 import matplotlib.pyplot as plt
 import json
 import datetime
