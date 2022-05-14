@@ -29,7 +29,7 @@ class get_data:
         tree = self.id_tree
 
         def url_api(sensor_type):
-            address = f"https://belajar-python-unsyiah.an.r.appspot.com/sensor/read?npm=1904105010051&id_tree={tree}&sensor_type={sensor_type}";
+            address = f"https://belajar-python-unsyiah.an.r.appspot.com/sensor/read?npm=1904105010004&id_tree={tree}&sensor_type={sensor_type}";
             return address;
         
         def air_temp(self):
